@@ -1,0 +1,43 @@
+
+body
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+/* Styles for the search result*/   
+#s-r 
+{
+    margin-left:auto; 
+    margin-right:auto;
+    width: 800px;
+}
+    
+#result-item-header
+{
+    color: red;
+    background-color: #9900FF;
+    text-align: center;
+}
+    
+.result-item-even
+{
+    background-color: #99CCFF;
+}
+
+.result-item-odd
+{
+    background-color: #999966;
+}
+
+tr.result-item-even:hover
+{
+    background-color: #CC00FF;
+}
+
+tr.result-item-odd:hover
+{
+    background-color: #CC00FF;
+    
+}

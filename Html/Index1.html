@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+        <head>
+            <title>Flash Go</title>
+            <link rel="stylesheet" type="text/css" href="3p/css/jqueryui/1.8.16/themes/base/jquery-ui.css" />
+		    <script src="3p/js/jquery/1.6.4/jquery.min.js"></script>
+		    <script src="3p/js/jqueryui/1.8.16/jquery-ui.min.js"></script>	
+
+            <link rel="stylesheet" type="text/css" href="css/fg1.css"/>
+            <script type="text/javascript" src='js/fg1.js'></script>
+            <script>
+                $(function () {
+                    $(".m-b").button();
+                });
+	</script>
+        </head>
+        <body><div id="header"> </div> <div id="nav"> 
+        </div><div id="body">
+              <div><input id="kw" type="text" maxlength="100" onkeyup="DoSearch(this.id)"/>               
+              <span id="ExeResult" class="spaceholder"> Default value.</span></div>
+              <div>
+              <table id="s-r">
+	            <tr id="result-item-header"><td>Key</td> <td>Title</td> <td>Link</td> <td>Comments</td></tr>
+	            <tr class="result-item-even"><td>K1</td> <td>Key one</td> <td>http://KeyOne</td> <td>Comments</td></tr>
+	            <tr class="result-item-odd"><td>K2</td> <td>Key two</td> <td>http://KeyTwo</td> <td>Comments</td></tr>
+	            <tr class="result-item-even"><td>K3</td> <td>Key three</td> <td>http://KeyThree</td> <td>Comments</td></tr>
+              </table>
+              </div>
+              <div id="menu"><button class="m-b">Add</button> <button class="m-b">Edit</button> <button class="m-b">Delete</button></div>              
+        </div>
+        <div id="footer"></div>
+        </body>
+</html>
