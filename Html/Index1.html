@@ -11,6 +11,11 @@
             <script>
                 $(function () {
                     $(".m-b").button();
+                    
+                    var myJSONObject = "{\"bindings\": [ {\"ircEvent\": \"PRIVMSG\", \"method\": \"newURI\", \"regex\": \"^http://.*\"},{\"ircEvent\": \"PRIVMSG\", \"method\": \"deleteURI\", \"regex\": \"^delete.*\"},{\"ircEvent\": \"PRIVMSG\", \"method\": \"randomURI\", \"regex\": \"^random.*\"}] }";
+                    
+                    var myObject = JSON.parse(myJSONObject);
+                    alert(myObject.bindings.length);
                 });
 	</script>
         </head>
